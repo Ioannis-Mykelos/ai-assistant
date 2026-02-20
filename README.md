@@ -63,11 +63,16 @@ http://localhost:8501
 
 ```
 .
-├── app.py                # Streamlit chat app with LangChain
-├── Dockerfile            # Container for running the app
-├── docker-compose.yaml   # Defines app + model services
-├── requirements.txt      # Python dependencies
-└── .env                  # Environment variables (you create this)
+├── .github/workflows/pylint-precommits.yaml   # GitHub actions
+├── .env                                       # Environment variables (you create this)
+├── .env.example                               # Environment variables as an example
+├── .gitignore                                 # Git ignore files
+├── .pre-commit-config.yaml                    # Pre commit configuration
+├── app.py                                     # Streamlit chat app with LangChain
+├── Dockerfile                                 # Container for running the app
+├── docker-compose.yaml                        # Defines app + model services
+├── requirements.txt                           # Python dependencies
+└── .env                                       # Environment variables (you create this)
 ```
 
 
