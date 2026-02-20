@@ -2,12 +2,6 @@
 
 This project is a **production-ready AI chat app** built with Docker Model Runner, Streamlit, and LangChain. It lets you talk to a local LLM running via Docker, or switch seamlessly to a large cloud-based model (like those on OpenRouter), all **while remembering your entire conversation history**. Each model will get the full chat context, even in moments when it wasn't participating in the conversation.
 
-## 🎥 Video Tutorial
-
-To build this application step by step, please watch my YouTube tutorial below. It will explain all the app processes, and the logic behind them.
-
-<a href="https://youtu.be/oIqF0z2UhDM" target="_blank"><img width="600" alt="LLM Chat App with Memory thumbnail" src="https://github.com/user-attachments/assets/212c47bc-de25-4e35-9c23-e747a33d5d6e" /></a>
-
 ## ⭐ Features
 
 1. Run local open-source LLMs with Docker Model Runner 🤖
