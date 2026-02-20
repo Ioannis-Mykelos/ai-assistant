@@ -3,6 +3,12 @@ name: Running pylint, pre-commits and pytest
 on:
   - pull_request
 
+# This block is the magic fix for the "Resource not accessible" error
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
 jobs:
   pylint:
     runs-on: ubuntu-latest
