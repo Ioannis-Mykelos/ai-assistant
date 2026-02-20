@@ -42,7 +42,7 @@ REMOTE_MODEL_NAME=qwen/qwen3-30b-a3b
 OPENROUTER_API_KEY=YOUR_OPENROUTER_API_KEY
 </pre>
 
-- Replace `YOUR_OPENROUTER_API_KEY` with your actual OpenRouter key.  
+- Replace `YOUR_OPENROUTER_API_KEY` with your actual OpenRouter key.
 - Choose any local or remote model from:
   - 👉 [Docker Model Catalog](https://dockr.ly/4eTeLQl)
   - 👉 [OpenRouter](https://openrouter.ai)
@@ -55,7 +55,7 @@ docker compose up
 
 Then open your browser to:
 
-http://localhost:8501  
+http://localhost:8501
 
 ✅ Your AI chat app is ready to use!
 
@@ -87,20 +87,20 @@ http://localhost:8501
 
 ## 🚀 Customization
 
-- **Change Local Model**  
+- **Change Local Model**
   Edit `LOCAL_MODEL_NAME` and `LOCAL_BASE_URL` in your `.env`.
 
-- **Change Remote Model**  
+- **Change Remote Model**
   Edit `REMOTE_MODEL_NAME`, `REMOTE_BASE_URL`, and your `OPENROUTER_API_KEY`.
 
-- **Dependencies**  
+- **Dependencies**
   Add any extra Python packages to `requirements.txt`.
 
 
 ## 📚 Helpful Links
 
-- 🐳 [Docker Model Runner Documentation](https://dockr.ly/4nT2saM)  
-- 🔎 [Find Models in Docker Catalog](https://dockr.ly/4eTeLQl)  
-- 🌐 [OpenRouter](https://openrouter.ai)  
-- 🐍 [Streamlit](https://streamlit.io)  
+- 🐳 [Docker Model Runner Documentation](https://dockr.ly/4nT2saM)
+- 🔎 [Find Models in Docker Catalog](https://dockr.ly/4eTeLQl)
+- 🌐 [OpenRouter](https://openrouter.ai)
+- 🐍 [Streamlit](https://streamlit.io)
 - 🦜 [LangChain for Python](https://python.langchain.com)

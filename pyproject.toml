@@ -1,0 +1,24 @@
+[tool.black]
+# Black's default is 88, but we're being explicit to match the linter
+line-length = 88
+target-version = ['py311']
+
+[tool.isort]
+# Tells isort to use settings that don't conflict with Black
+profile = "black"
+line_length = 88
+
+[tool.flake8]
+# This section works because you have 'Flake8-pyproject' in your YAML
+max-line-length = 88
+# E203: whitespace before ':' (Black does this, Flake8 hates it by default)
+# W503: line break before binary operator (Black does this too)
+extend-ignore = "E203, W503"
+exclude = [
+    ".git",
+    "__pycache__",
+    "build",
+    "dist",
+    "venv",
+    ".venv",
+]
