@@ -24,10 +24,11 @@ This project is a **production-ready AI chat app** built with Docker Model Runne
 
 ### 2️⃣ Clone This Repo
 
-<pre>
-git clone https://github.com/MariyaSha/simple_AI_assistant.git
+```
+bash
+git clone https://github.com/Ioannis-Mykelos/ai-assistant.git
 simple_AI_assistant
-</pre>
+```
 
 ### 3️⃣ Create a `.env` File
 
