@@ -24,10 +24,11 @@ This project is a **production-ready AI chat app** built with Docker Model Runne
 
 ### 2️⃣ Clone This Repo
 
-<pre>
-git clone https://github.com/MariyaSha/simple_AI_assistant.git
+```
+bash
+git clone https://github.com/Ioannis-Mykelos/ai-assistant.git
 simple_AI_assistant
-</pre>
+```
 
 ### 3️⃣ Create a `.env` File
 
@@ -98,10 +99,3 @@ http://localhost:8501
 - 🌐 [OpenRouter](https://openrouter.ai)  
 - 🐍 [Streamlit](https://streamlit.io)  
 - 🦜 [LangChain for Python](https://python.langchain.com)
-
-
-## 🤝 Contributing
-
-If you'd like to contribute, please create an issue and describe what you have in mind.
-<br>
-I'm trying to keep this repository as close as possible to the video workflow, but if you'd like to take it to the next level, I can split it in two.
