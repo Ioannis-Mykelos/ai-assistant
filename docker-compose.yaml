@@ -3,12 +3,11 @@ services:
     build: .
     volumes:
       - ./:/app
+      - venv:/app/.venv  # keeps the container's .venv intact
     ports:
       - 8501:8501
     environment:
-      - LOCAL_BASE_URL
       - REMOTE_BASE_URL
-      - LOCAL_MODEL_NAME
       - REMOTE_MODEL_NAME
       - OPENROUTER_API_KEY
     extra_hosts:
@@ -22,3 +21,6 @@ services:
       type: model
       options:
         model: ai/qwen2.5
+
+volumes:
+  venv:

@@ -4,11 +4,9 @@ This project is a **production-ready AI chat app** built with Docker Model Runne
 
 ## ⭐ Features
 
-1. Run local open-source LLMs with Docker Model Runner 🤖
-2. Clean Streamlit chat interface with message history 💻
-3. Seamless switch between local and cloud models 🕹️
-4. Context-passing for memory-aware responses 💡
-5. Fully containerized with Docker Compose  🐋
+1. Clean Streamlit chat interface with message history 💻
+2. Context-passing for memory-aware responses 💡
+3. Fully containerized with Docker Compose  🐋
 
 
 ## 📸 Screenshot
@@ -24,34 +22,39 @@ This project is a **production-ready AI chat app** built with Docker Model Runne
 
 ### 2️⃣ Clone This Repo
 
-```
-bash
+```bash
 git clone https://github.com/Ioannis-Mykelos/ai-assistant.git
-simple_AI_assistant
 ```
 
 ### 3️⃣ Create a `.env` File
 
 Create a file named `.env` in the project root:
 
-<pre>
-LOCAL_BASE_URL=http://model-runner.docker.internal/engines/llama.cpp/v1
+```env
 REMOTE_BASE_URL=https://openrouter.ai/api/v1
-LOCAL_MODEL_NAME=ai/gemma3
 REMOTE_MODEL_NAME=qwen/qwen3-30b-a3b
-OPENROUTER_API_KEY=YOUR_OPENROUTER_API_KEY
-</pre>
+OPENROUTER_API_KEY=<YOUR_OPENROUTER_API_KEY>
+```
 
 - Replace `YOUR_OPENROUTER_API_KEY` with your actual OpenRouter key.
 - Choose any local or remote model from:
   - 👉 [Docker Model Catalog](https://dockr.ly/4eTeLQl)
   - 👉 [OpenRouter](https://openrouter.ai)
 
+
+> [!NOTE]
+> This project uses the `uv` Python package manager for dependency management.
+> Follow the instructions from the [official documentation](https://docs.astral.sh/uv/getting-started/installation/#standalone-installer) if you want to run the app locally without Docker.
+
+To activate your `.venv` environment (created by `uv sync`):
+- Windows use `.venv\Scripts\activate`
+- Linux source `.venv/bin/activate`
+
 ### 4️⃣ Run the App
 
-<pre>
+```bash
 docker compose up
-</pre>
+```
 
 Then open your browser to:
 
@@ -71,9 +74,8 @@ http://localhost:8501
 ├── app.py                                     # Streamlit chat app with LangChain
 ├── docker-compose.yaml                        # Defines app + model services
 ├── Dockerfile                                 # Container for running the app
-├── LICENCE                                    # Apache 2.0 Licence
-├── pyproject.toml                             # project configuration
-└── requirements.txt                           # Python dependencies
+├── LICENSE                                    # MIT License
+└── pyproject.toml                             # Project configuration and dependencies (managed by uv)
 ```
 
 
@@ -88,14 +90,11 @@ http://localhost:8501
 
 ## 🚀 Customization
 
-- **Change Local Model**
-  Edit `LOCAL_MODEL_NAME` and `LOCAL_BASE_URL` in your `.env`.
-
 - **Change Remote Model**
   Edit `REMOTE_MODEL_NAME`, `REMOTE_BASE_URL`, and your `OPENROUTER_API_KEY`.
 
 - **Dependencies**
-  Add any extra Python packages to `requirements.txt`.
+  Add any extra Python packages to `pyproject.toml` using `uv`.
 
 
 ## 📚 Helpful Links
