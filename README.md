@@ -47,6 +47,15 @@ OPENROUTER_API_KEY=YOUR_OPENROUTER_API_KEY
   - 👉 [Docker Model Catalog](https://dockr.ly/4eTeLQl)
   - 👉 [OpenRouter](https://openrouter.ai)
 
+
+> [!NOTE]
+> Here we are using  `uv` python package management
+> Follow the instractions from the [official documentation](https://docs.astral.sh/uv/getting-started/installation/#standalone-installer)
+
+To activate your  `.venv` environment:
+- Windows use `.venv\Scripts\activate`
+- Linux source `.venv/bin/activate`
+
 ### 4️⃣ Run the App
 
 <pre>

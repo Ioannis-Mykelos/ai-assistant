@@ -2,8 +2,10 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
+RUN pip install uv
+
 COPY . .
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN uv sync --no-dev
 
 CMD ["streamlit", "run", "app.py"]
