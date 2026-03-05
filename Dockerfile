@@ -8,4 +8,6 @@ COPY . .
 
 RUN uv sync --no-dev
 
+ENV PATH="/app/.venv/bin:$PATH"
+
 CMD ["streamlit", "run", "app.py"]
